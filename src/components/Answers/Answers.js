@@ -3,7 +3,7 @@ import './Answers.css';
 
 const AnswersContainer = (props) => {
     return (
-        <div>Answers</div>
+        <div className="col-5">Answers</div>
     )
 }
 
