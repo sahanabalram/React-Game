@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import {Grid, Col, Row} from 'react-bootstrap';
 import GameContainer from './components/Game';
 import StarsContainer from './components/Stars';
 import ButtonContainer from './components/Button';
@@ -8,11 +9,25 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <GameContainer/>
-        <StarsContainer/>
-        <ButtonContainer/>
-        <AnswersContainer/>
+        <Grid>
+          <Row>
+            <Col-5>
+              <StarsContainer/>
+            </Col-5>
+
+            <Col-2>
+              <ButtonContainer/>
+            </Col-2>
+
+            <Col-2>
+              <AnswersContainer/>
+            </Col-2>
+          </Row>
+
+        </Grid>
+
       </div>
     );
   }
