@@ -3,7 +3,13 @@ import './Stars.css';
 
 const StarsContainer = (props) => {
     return (
-        <div>...</div>
+        <div>
+        <i className="fa fa-star"></i>
+        <i className="fa fa-star"></i>
+        <i className="fa fa-star"></i>
+        <i className="fa fa-star"></i>
+        <i className="fa fa-star"></i>
+        </div>
     )
 }
 
