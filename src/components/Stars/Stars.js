@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Col} from 'react-bootstrap';
 import './Stars.css';
 
 const StarsContainer = (props) => {
