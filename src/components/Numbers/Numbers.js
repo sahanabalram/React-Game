@@ -4,11 +4,11 @@ import './Numbers.css';
 const NumbersContainer = (props) => {
     return (
         <div className="card text-white bg-success mb-3">
-            <div className="card-header">Header</div>
+            <div className="card-header">Numbers</div>
             <div className="card-body">
-                <h4 className="card-title">Success card title</h4>
-                <p className="card-text">Some quick example text to build on the card title and
-                    make up the bulk of the card's content.</p>
+            <span class="badge badge-pill badge-danger">1</span>
+            <span class="badge badge-pill badge-danger selected">2</span>
+            <span class="badge badge-pill badge-danger used">3</span>
             </div>
         </div>
     );
