@@ -4,6 +4,7 @@ import GameContainer from './components/Game';
 import StarsContainer from './components/Stars';
 import ButtonContainer from './components/Button';
 import AnswersContainer from './components/Answers';
+import NumbersContainer from './components/Numbers';
 import './App.css';
 
 class App extends Component {
@@ -27,7 +28,7 @@ class App extends Component {
           </Row>
 
         </Grid>
-
+      <NumbersContainer/>
       </div>
     );
   }
