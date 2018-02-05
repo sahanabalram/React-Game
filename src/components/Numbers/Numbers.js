@@ -9,9 +9,17 @@ const NumbersContainer = (props) => {
             <span class="badge badge-pill badge-danger">1</span>
             <span class="badge badge-pill badge-danger selected">2</span>
             <span class="badge badge-pill badge-danger used">3</span>
+            <span class="badge badge-pill badge-danger">4</span>
+            <span class="badge badge-pill badge-danger">5</span>
+            <span class="badge badge-pill badge-danger">6</span>
+            <span class="badge badge-pill badge-danger">7</span>
+            <span class="badge badge-pill badge-danger">8</span>
+            <span class="badge badge-pill badge-danger">9</span>
             </div>
         </div>
     );
-}
+};
+
+NumbersContainer.list = 1,10;
 
 export default NumbersContainer;
