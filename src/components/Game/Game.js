@@ -8,12 +8,25 @@ import './Game.css';
 
 class GameContainer extends Component {
     state = {
-        selectedNumber: [],
-        randomNumberOfStars: 1+ Math.floor(Math.random()*9)
+        selectedNumbers: [],
+        randomNumberOfStars: 1 + Math.floor(Math.random() * 9)
     };
     selectNumber = (clickedNumber) => {
-        this.setState(prevState =>({
-            selectedNumber: prevState.selectedNumber.concat(clickedNumber)
+        if (this.state.selectedNumbers.indexOf(clickedNumber) >= 0) {
+            return;
+        }
+        this.setState(prevState => ({
+            selectedNumbers: prevState
+                .selectedNumbers
+                .concat(clickedNumber)
+        }));
+    }
+
+    unselectNumber = (clickedNumber) => {
+        this.setState(prevState => ({
+            selectedNumbers: prevState
+                .selectedNumbers
+                .filter(number => number !== clickedNumber)
         }));
     }
     render() {
@@ -30,18 +43,21 @@ class GameContainer extends Component {
                         </Row>
                         <Row>
                             <Col s={12} m={12} lg={12}>
-                                <ButtonConatiner/>
+                                <ButtonConatiner selectedNumbers={this.state.selectedNumbers}/>
                             </Col>
                         </Row>
                         <Row>
                             <Col s={12} m={12} lg={12}>
-                                <AnswerContainer selectedNumber={this.state.selectedNumber}/>
+                                <AnswerContainer
+                                    selectedNumbers={this.state.selectedNumbers}
+                                    unselectNumber={this.unselectNumber}/>
                             </Col>
                         </Row>
                         <Row>
                             <Col s={12} m={12} lg={12}>
-                                <NumberContainer selectedNumber={this.state.selectedNumber}
-                                                    selectNumber={this.selectNumber}/>
+                                <NumberContainer
+                                    selectedNumbers={this.state.selectedNumbers}
+                                    selectNumber={this.selectNumber}/>
                             </Col>
                         </Row>
                     </Grid>
