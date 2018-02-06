@@ -6,7 +6,7 @@ const ButtonContainer = (props) => {
     return (
         <div>
         <ButtonToolbar>
-            <Button bsStyle="info">Equal</Button>
+            <Button bsStyle="info" disabled={props.selectedNumbers.length === 0}>=</Button>
         </ButtonToolbar>
         </div>
     )
