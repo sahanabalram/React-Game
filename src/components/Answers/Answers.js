@@ -4,9 +4,8 @@ import './Answers.css';
 const AnswersContainer = (props) => {
     return (
         <div>
-            <h4>Answer Selected</h4>
-            {props.selectedNumber.map((number,i) =>
-                <span key={i} className="badge badge-pill badge-danger">{number}</span>
+            {props.selectedNumbers.map((number,i) =>
+                <span key={i} onClick={() => props.unselectNumber(number)} className="badge badge-pill badge-danger">{number}</span>
             )}
             
         </div>
