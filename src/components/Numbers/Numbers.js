@@ -18,7 +18,7 @@ const NumbersContainer = (props) => {
             <div className="card-header">Numbers</div>
             <div className="card-body">
             {numbers.map((numbers,i) => 
-                <span  class="badge badge-pill badge-danger" onClick={() => props.selectNumber(numbers)}>
+                <span  className="badge badge-pill badge-danger" onClick={() => props.selectNumber(numbers)}>
                 {numbers}
                 </span>
             )}
