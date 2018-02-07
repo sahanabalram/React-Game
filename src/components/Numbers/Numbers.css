@@ -1,16 +1,17 @@
-span.badge.badge-pill.badge-danger {
+span.badge.badge-pill.badge-info {
     display: inline-block;
     margin: 0.5em;
     text-align: center;
     cursor: pointer;
 }
 
-.card.text-white.bg-success.mb-3 {
+.card.border-info.mb-3 {
     width: 20em;
     margin-top: 20px;
 }
 
-span.badge.badge-pill.badge-danger.selected {
+
+span.badge.badge-pill.badge-info.selected {
     display: inline-block;
     margin: 0.5em;
     text-align: center;
@@ -20,7 +21,7 @@ span.badge.badge-pill.badge-danger.selected {
     cursor: not-allowed;
 }
 
-span.badge.badge-pill.badge-danger.used {
+span.badge.badge-pill.badge-info.used {
     display: inline-block;
     margin: 0.5em;
     text-align: center;

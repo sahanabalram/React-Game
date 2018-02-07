@@ -5,7 +5,7 @@ const AnswersContainer = (props) => {
     return (
         <div>
             {props.selectedNumbers.map((number,i) =>
-                <span key={i} onClick={() => props.unselectNumber(number)} className="badge badge-pill badge-danger">{number}</span>
+                <span key={i} onClick={() => props.unselectNumber(number)} className="badge badge-pill badge-info">{number}</span>
             )}
             
         </div>
